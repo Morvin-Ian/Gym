@@ -1,0 +1,493 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+
+header{
+    padding: 30px;
+    background-color: black;
+    color: rgb(255, 167, 3);
+   
+}
+
+
+ul {
+    padding: 10px;
+}
+
+nav ul li{
+    list-style: none;
+    color: rgb(99, 90, 90);
+    display: inline;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    float: right;
+    padding: 10px;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+.member{
+    display: flex;
+    justify-content: center;
+}
+.member img{
+       
+    width: 100px;
+    height: 300px;
+    
+  
+}
+
+.member .btn{
+    margin-left: 50%;
+}
+
+.member p{
+
+    margin-left: 120px;
+}
+
+.member img{
+   
+    width: 400px;
+    height: 400px;
+    margin-left: 10%;
+}
+
+.join{
+   flex-basis: 50%;
+   margin-right: 10%;
+   margin-left: 10%;
+   
+}
+
+.offers{
+    flex-basis: 50%;
+    margin-top: 10%;
+}
+
+.offers ul li{
+    padding: 5px;
+}
+
+.offers ul li a{
+    text-decoration: none;
+}
+
+.offers ul li a:hover{
+    color: black;
+}
+
+.training{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+.arms,.legs,.yoga,.chest{
+    flex-basis: 20%;
+    margin: 10px;
+}
+
+.trainers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+.trainer1,.trainer2,.trainer3,.trainer4{
+    flex-basis: 33%;
+    margin: 10px;
+    position:relative;
+    display:inline-block;
+    text-align:center;
+
+}
+
+img{
+  
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    position: inherit;
+    cursor: pointer;
+       
+}
+.trainers img{
+    transition: height 0.5s;
+    
+
+}
+.trainers img:hover{
+    box-shadow: 10px 10px 5px grey;
+    height: 380px;
+}
+
+
+.reach{
+    position:absolute;
+    bottom:30px;
+    left:3px;
+    background-color: black;
+
+}
+
+.reach i{
+    margin: 10px;
+
+}
+
+
+.button {
+    position:absolute;
+    bottom:30px;
+    right:10px;
+    width:100px;
+    height:40px;
+    border-radius: 5px;
+    padding: 20px;
+
+}
+
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    background-color: black;
+    width: 100%;
+
+}
+
+.daily,.weekly,.monthly{
+    flex-basis: 33%;
+    margin: 10px;
+   
+}
+
+.footer-cont{
+    display: flex;
+    padding: 30px;
+    background-color: black;
+    margin-top: 10px;
+}
+
+.about,.contacts,.Social{
+    flex-basis: 25%;
+    margin: 50px;
+    color: gray;
+    
+   
+}
+
+@media screen and (max-width: 500px) {
+
+    header{
+        padding: 20px;
+        background-color: black;
+        color: rgb(255, 167, 3);
+       
+    }
+    
+    
+    nav {
+        display: none;
+    }
+  
+       
+    .member img{
+       
+        width: 100px;
+        height: 300px;
+      
+    }
+
+    .member .btn{
+        margin-left: 50%;
+    }
+
+    .member p{
+
+        margin-left: 140px;
+    }
+
+    .join{
+       flex-basis: 70%;
+       margin-right: 10%;
+       margin-left: 30%;
+       
+    }
+   
+    
+    .offers{
+        display: none;
+    }
+        
+    .training{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 15%;
+      
+    }
+    
+    .arms,.legs,.yoga,.chest{
+        flex-basis: 20%;
+        margin: 10px;
+    }
+    
+    .trainers{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 15%;
+      
+    }
+    
+    .trainer1,.trainer2,.trainer3,.trainer4{
+        flex-basis: 33%;
+        margin: 10px;
+        position:relative;
+        display:inline-block;
+        text-align:center;
+    
+    }
+    
+    img{
+      
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 15px;
+        position: inherit;
+        cursor: pointer;
+        
+           
+    }
+    .trainers img{
+        transition: height 0.5s;
+        
+    
+    }
+    .trainers img:hover{
+        box-shadow: 10px 10px 5px grey;
+        height: 380px;
+    }
+    
+    
+    .reach{
+        position:absolute;
+        bottom:30px;
+        left:3px;
+        background-color: black;
+    
+    }
+    
+    .reach i{
+        margin: 5px;
+    
+    }
+    
+    
+    .button {
+        position:absolute;
+        bottom:30px;
+        right:10px;
+        width:70px;
+        height:40px;
+        border-radius: 3px;
+        padding: 10px;
+    
+    }
+    
+    
+    
+    .footer-cont{
+        display: block;
+        padding: 30px;
+        background-color: black;
+        margin-top: 10px;
+    }
+    
+    .about,.contacts,.Social{
+        flex-basis: 25%;
+        margin: 50px;
+        color: gray;
+        
+       
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    header{
+        padding: 30px;
+        background-color: black;
+        color: rgb(255, 167, 3);
+       
+    }
+    
+
+    
+    nav ul li{
+        list-style: none;
+        color: rgb(99, 90, 90);
+        display: inline;
+        
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        float: right;
+        padding: 10px;
+    }
+    
+    nav ul li a:hover{
+        color: black;
+    }
+    
+    .member{
+        display: block;
+        
+    }
+    
+    .member img{
+       
+        width: 300px;
+        height: 300px;
+        margin-left: 0%;
+        margin-top: 10%;
+      
+    }
+
+    .member .btn{
+        margin-left: 30%;
+    }
+
+    .member p{
+
+        margin-left: 80px;
+    }
+
+    .join{
+       flex-basis: 70%;
+       margin-right: 10%;
+       margin-left: 30%;
+       
+    }
+    
+    .offers{
+        display: none;
+    }
+    
+    
+    .training{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+      
+    }
+    
+    .arms,.legs,.yoga,.chest{
+        flex-basis: 20%;
+        margin: 10px;
+    }
+    
+    .trainers{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      
+    }
+    
+    .trainer1,.trainer2,.trainer3,.trainer4{
+        flex-basis: 33%;
+        margin: 10px;
+        position:relative;
+        display:inline-block;
+        text-align:center;
+    
+    }
+    
+    img{
+      
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 15px;
+        position: inherit;
+        cursor: pointer;
+           
+    }
+    .trainers img{
+        transition: height 0.5s;
+        
+    
+    }
+    .trainers img:hover{
+        box-shadow: 10px 10px 5px grey;
+        height: 380px;
+    }
+    
+    
+    .reach{
+        position:absolute;
+        bottom:30px;
+        left:3px;
+        background-color: black;
+    
+    }
+    
+    .reach i{
+        margin: 10px;
+    
+    }
+    
+    
+    .button {
+        position:absolute;
+        bottom:30px;
+        right:10px;
+        width:100px;
+        height:40px;
+        border-radius: 5px;
+        padding: 20px;
+    
+    }
+    
+    
+    .footer-cont{
+        display: block;
+        padding: 30px;
+        background-color: black;
+        margin-top: 10px;
+    }
+    
+    .about,.contacts,.Social{
+       
+        margin: 50px;
+        color: gray;
+        
+       
+    }
+}
